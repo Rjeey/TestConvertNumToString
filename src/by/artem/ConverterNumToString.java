@@ -11,8 +11,8 @@ import java.util.Map;
 public class ConverterNumToString {
     private final String PATH_FILE_DEGREE = "dataFiles/nameDegrees.txt";
     private final String PATH_FILE_DISCHARGES = "dataFiles/nameDischarges.txt";
-    private final static int MALE_GENDER = 1;
-    private final static int FEMALE_GENDER = -1;
+    private final static int MALE = 1;
+    private final static int FEMALE = -1;
     private final static String SPACE = " ";
 
     private Map<Integer, String> nameDischarges;
@@ -44,10 +44,10 @@ public class ConverterNumToString {
             for(int i =0; i < numberStr.length() / 3; i++){
                 int degree = numberStr.length() / 3 - i - 1;
                 if(degree == 1)
-                      nameNumber += convertDischarge(numberStr.substring(i * 3, i * 3 + 3), FEMALE_GENDER) +
+                      nameNumber += convertDischarge(numberStr.substring(i * 3, i * 3 + 3), FEMALE) +
                               getFormNameDegree(degree, numberStr.substring(i * 3, i * 3 + 3));
                       else
-                          nameNumber += convertDischarge(numberStr.substring(i * 3, i * 3 + 3), MALE_GENDER) +
+                          nameNumber += convertDischarge(numberStr.substring(i * 3, i * 3 + 3), MALE) +
                                   getFormNameDegree(degree, numberStr.substring(i * 3, i * 3 + 3));
 
             }
