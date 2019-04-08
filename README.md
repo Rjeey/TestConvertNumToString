@@ -1,4 +1,4 @@
-h1 ConvertNumToText
+# ConvertNumToText
 
 Тестовое задание для jazzTeam. Сделал Мальчихин Артем 04.04.2019
 
