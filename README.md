@@ -10,8 +10,8 @@
 <li> По возможности, применить ООП.
 
 Описание папок:
-в папке libFiles находятся файлы-библиотеки для работы
-в папке DataForTest лежит файл для тестрования
-в папке src/by/artem лежат: java файл с основной логикой задания ConverterNumToText и java файл для запуска TryToWork
-в папке src/by/artem/test лежат java файлы для Тестирования testConverNumToText - проверяет работы оснеовных значений на правильность
+<li> libFiles находятся файлы-библиотеки для работы
+<li> DataForTest лежит файл для тестрования
+<li> src/by/artem лежат: java файл с основной логикой задания ConverterNumToText и java файл для запуска TryToWork
+<li> src/by/artem/test лежат java файлы для Тестирования testConverNumToText - проверяет работы оснеовных значений на правильность
 и testConvertNumToTextFromTextFile - проверка перевода значений со значениями из файла.
