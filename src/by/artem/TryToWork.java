@@ -2,11 +2,8 @@ package by.artem;
 
 import java.io.IOException;
 import java.math.BigInteger;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class TryToWork {
-    private static Logger log =  Logger.getLogger(TryToWork.class.getName());
 
     public static void main(String[] args) {
         BigInteger values[] = {new BigInteger("134345"), new BigInteger("99988877766620178587876868578858685768"),
@@ -18,7 +15,7 @@ public class TryToWork {
             try {
                 System.out.println(obj.convertNumbToText(value));
             } catch (IOException e) {
-                log.log(Level.SEVERE, null, e);
+              e.printStackTrace();
             }
     }
 }
