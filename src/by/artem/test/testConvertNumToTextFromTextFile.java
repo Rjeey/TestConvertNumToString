@@ -1,7 +1,6 @@
 package by.artem.test;
 
-
-import by.artem.ConverterNumToString;
+import by.artem.ConverterNumToText;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -12,16 +11,16 @@ import java.math.BigInteger;
 
 import static org.junit.Assert.*;
 
-public class ConverterNumToStringFromTextFileTest {
+public class testConvertNumToTextFromTextFile {
 
     private BufferedReader br = null;
-    private final ConverterNumToString Converter = new ConverterNumToString();
+    private final ConverterNumToText Converter = new ConverterNumToText();
 
     @Before
     public void setUp() throws Exception {
         br = new BufferedReader(
                 new InputStreamReader(
-                        new FileInputStream("DataForTest/TestNumbers.txt"), "UTF8"));
+                        new FileInputStream("DataForTesting/TestNumbers.txt"), "UTF8"));
     }
 
     @After
@@ -40,9 +39,10 @@ public class ConverterNumToStringFromTextFileTest {
         while ((tmpLineStr = br.readLine()) != null) {
             if (!tmpLineStr.equals("")) {
                 Units = tmpLineStr.split(":");
-                assertEquals(Units[1],
-                        Converter.convertNumbToString(new BigInteger(Units[0])));
+                assertEquals("Error: ",Units[1],
+                        Converter.convertNumbToText(new BigInteger(Units[0])));
             }
         }
+        System.out.println("Junit test: Data conversion from file was successful  ");
     }
 }

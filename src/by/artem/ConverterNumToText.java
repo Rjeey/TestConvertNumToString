@@ -8,9 +8,9 @@ import java.math.BigInteger;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ConverterNumToString {
-    private final String PATH_FILE_DEGREE = "dataFiles/nameDegrees.txt";
-    private final String PATH_FILE_DISCHARGES = "dataFiles/nameDischarges.txt";
+public class ConverterNumToText {
+    private final String PATH_FILE_DEGREE = "libFiles/nameDegrees.txt";
+    private final String PATH_FILE_DISCHARGES = "libFiles/nameDischarges.txt";
     private final static int MALE = 1;
     private final static int FEMALE = -1;
     private final static String SPACE = " ";
@@ -21,7 +21,7 @@ public class ConverterNumToString {
 
     private final String[][] endings = {{"а", "и", ""},{"","а","ов"}};
 
-    public  String convertNumbToString(BigInteger number) throws IOException{
+    public  String convertNumbToText(BigInteger number) throws IOException{
 
         nameDegrees = initNameFromFile(PATH_FILE_DEGREE);
         nameDischarges =  initNameFromFile(PATH_FILE_DISCHARGES);
