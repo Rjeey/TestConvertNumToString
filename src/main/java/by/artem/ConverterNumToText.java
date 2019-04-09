@@ -9,8 +9,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ConverterNumToText {
-    private final String PATH_FILE_DEGREE = "libFiles/nameDegrees.txt";
-    private final String PATH_FILE_DISCHARGES = "libFiles/nameDischarges.txt";
+    private final String PATH_FILE_DEGREE = "E:\\dev\\TestForJazzTeam\\src\\main\\resources\\libFiles\\nameDegrees.txt";
+    private final String PATH_FILE_DISCHARGES = "E:\\dev\\TestForJazzTeam\\src\\main\\resources\\libFiles\\nameDischarges.txt";
     private final static int MALE = 1;
     private final static int FEMALE = -1;
     private final static String SPACE = " ";

@@ -1,6 +1,5 @@
-package by.artem.test;
+package by.artem;
 
-import by.artem.ConverterNumToText;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,7 +10,7 @@ import java.math.BigInteger;
 
 import static org.junit.Assert.*;
 
-public class testConvertNumToTextFromTextFile {
+public class TestConvertNumToTextFromTextFile {
 
     private BufferedReader br = null;
     private final ConverterNumToText Converter = new ConverterNumToText();
@@ -20,7 +19,7 @@ public class testConvertNumToTextFromTextFile {
     public void setUp() throws Exception {
         br = new BufferedReader(
                 new InputStreamReader(
-                        new FileInputStream("DataForTesting/TestNumbers.txt"), "UTF8"));
+                        new FileInputStream("src/test/resources/DataForTesting/TestNumbers.txt"), "UTF8"));
     }
 
     @After
